@@ -18,11 +18,11 @@ int main () {
         if (is_number(s[i])) {
             if (i != 0 && is_number(s[i - 1])) {
 
-                ans[ans.size() - 1] += s[i];
+                ans.back() += s[i];
 
             } else {
                 
-                ans.push_back(""); ans[ans.size() - 1] += s[i];
+                ans.push_back(""); ans.back() += s[i];
 
             }
 
@@ -42,7 +42,7 @@ int main () {
                 if (s[i] == '+' || s[i] == '-') {
 
                     while (!st.empty()) {
-                        ans.push_back(""); ans[ans.size() - 1] += st.top();
+                        ans.push_back(""); ans.back() += st.top();
 
                         st.pop();
                     }
@@ -52,7 +52,7 @@ int main () {
                 } else {
 
                     while (!st.empty() && st.top() != "+" && st.top() != "-") {
-                        ans.push_back(""); ans[ans.size() - 1] += st.top();
+                        ans.push_back(""); ans.back() += st.top();
 
                         st.pop();
                     }
