@@ -25,3 +25,4 @@
 20. Алгоритм Флойда: floyd.cpp
 21. Алгоритм Форда-Беллмана: bellmanFord.cpp
 22. Мосты: bridges.cpp, Точки сочленения: articulationPoints.cpp
+23. Прима: prima.cpp
