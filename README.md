@@ -24,3 +24,4 @@
 19. Алгоритм Дейкстры: 5 - dijkstra.cpp, 6 - dijkstraPath.cpp, Дейкстра через set - dijkstraMLogN.cpp
 20. Алгоритм Флойда: floyd.cpp
 21. Алгоритм Форда-Беллмана: bellmanFord.cpp
+22. Мосты: bridges.cpp
