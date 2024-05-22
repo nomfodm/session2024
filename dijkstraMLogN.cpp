@@ -25,18 +25,18 @@ void solve() {
     vector<int> dist(n, INF);
 
     dist[k] = 0;
-    s.insert({k, 0});
+    s.insert({0, k});
 
     while (!s.empty()) {
-        int current = s.begin()->first;
+        int current = s.begin()->second;
         s.erase(s.begin());
 
         for (pair<int,int> i : g[current]) {
             if (dist[current] + i.second < dist[i.first]) {
                 
-                s.erase({i.first, dist[i.first]});
+                s.erase({dist[i.first], i.first});
                 dist[i.first] = dist[current] + i.second;
-                s.insert({i.first, dist[i.first]});
+                s.insert({dist[i.first], i.first});
             }
         }
     }
