@@ -22,3 +22,4 @@
 17. Обход графа в глубину: Проверка на двудольность - dfsBipartile.cpp, Топологическая сортировка - dfsTopologySort.cpp
 18. Обход графа в глубину: Проверка на цикл в неориетиованном графе - dfsLoopUndirected.cpp, Проверка на цикл в ориетиованном графе - dfsLoopDirected.cpp
 19. Алгоритм Дейкстры: 5 - dijkstra.cpp, 6 - dijkstraPath.cpp, Дейкстра через set - dijkstraMLogN.cpp
+20. Алгоритм Флойда: floyd.cpp
